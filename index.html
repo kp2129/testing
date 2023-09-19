@@ -11,21 +11,32 @@
             height: 30rem;
             width: 30rem;
         }
+
+        button {
+            align-items: center;
+            border-radius: 1pc;
+            border-style: solid;
+            font-size: small;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+        }
     </style>
 </head>
 
 <body>
     <h1>Testing GitHub</h1>
-    
+
     <p>Kla</p>
     <div class="taisnsturis">
-        
+
     </div>
-    <button id="button">nospied mani</button>
+    <button onclick="alertMe()">nospied mani</button>
     <script>
-        const button = document.getElementById("button");
-        button.onclick = () => {
-            alert("tu mani nospiedi!");
+        function alertMe() {
+            alert("You have clicked me!")
         }
     </script>
 </body>
